@@ -1,10 +1,10 @@
 var a = [];
-
-var size = prompt("Сколько элементов должно быть в массиве?")
-if (size <= 0 ){
+var size = prompt("Сколько элементов должно быть в массиве?");
+if (size <= 0){
     alert( "Ух ты какой хитрый, такого массива не бывает" );
     throw "stop";
   }
+  if (size >= 1){
 for (var i=0; i<size; i++)
     a[i] = parseInt(prompt("Введите целочисленные элементы массива:"));
 
@@ -26,3 +26,4 @@ for (var i=0; i<size; i++)
             return Math.max.apply(Math, a);
         };
         alert("Максимальное значение равно: "+Math.max.apply(Math, a));
+    }
